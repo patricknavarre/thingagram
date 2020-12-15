@@ -1,12 +1,30 @@
 body {
-    background-color: black;
+    background-image: url(https://i.pinimg.com/originals/a3/24/2f/a3242f54507275923fa8d0eed140e6fb.gif);
+    background-size: contain;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
+}
+
+a:link {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:visited{
+    color: gray;
+}
+
+a:hover{
+    color: darkgray
 }
 
 img {
     width: 420px;
     padding: 5px;
+}
+
+img:hover{
+    opacity: 50%;
 }
 #home-page{
     text-align: center;
