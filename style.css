@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://i.pinimg.com/originals/a3/24/2f/a3242f54507275923fa8d0eed140e6fb.gif);
+    background-image: url(/images/VU-Meters.gif);
     background-size: contain;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
@@ -21,8 +21,8 @@ a:hover{
 img {
     display: flex;
     width: 420px;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 6px;
+    border-radius: 20px;
 }
 #moog-logo{
     width: 120px;
@@ -56,7 +56,7 @@ img:hover{
 
 #header-lower{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-bottom: 10px;
     padding-left: 10px;
 }
