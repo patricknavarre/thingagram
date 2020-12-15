@@ -1,14 +1,52 @@
 img {
     width: 420px;
 }
+#home-page{
+    text-align: center;
+    display: grid;
+    grid-template-rows: 5% 5% 90%;
+}
 
 #feed{
     display: grid;
-    grid-template-columns: 33% 33% 34%;
+    grid-template-columns: 33% 33% 33%;
     grid-template-areas: 
     "con" "rec" "syn"
     "con" "rec" "syn"
     "con" "rec" "syn"
     "con" "rec" "syn"
     "con" "rec" "syn";
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+    #feed{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "con" "rec" 
+        "con" "rec" 
+        "con" "rec" 
+        "con" "rec" 
+        "con" "rec"
+        "syn" "syn"
+        "syn" "syn"
+        "syn";
+    }
+}
+
+@media (max-width: 699px) {
+    #feed{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "con" "rec" 
+        "con" "rec" 
+        "con" "rec" 
+        "con" "rec" 
+        "con" "rec"
+        "syn" "syn"
+        "syn" "syn"
+        "syn";
+    }
+
 }
