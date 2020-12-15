@@ -1,0 +1,14 @@
+img {
+    width: 420px;
+}
+
+#feed{
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-areas: 
+    "con" "rec" "syn"
+    "con" "rec" "syn"
+    "con" "rec" "syn"
+    "con" "rec" "syn"
+    "con" "rec" "syn";
+}
