@@ -1,5 +1,12 @@
+body {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
 img {
     width: 420px;
+    padding: 5px;
 }
 #home-page{
     text-align: center;
@@ -9,6 +16,7 @@ img {
 
 #feed{
     display: grid;
+    align-content: space-between;
     grid-template-columns: 33% 33% 33%;
     grid-template-areas: 
     "con" "rec" "syn"
