@@ -19,60 +19,109 @@ a:hover{
 }
 
 img {
+    display: flex;
     width: 420px;
     padding: 5px;
+    border-radius: 10px;
+}
+#moog-logo{
+    width: 120px;
+}
+
+#ssl{
+    width: 160px;
+    padding-top: 15px;
+}
+
+#neve{
+    width: 140px;
+}
+
+#pioneer{
+    width: 160px;
+    height: 55px;
 }
 
 img:hover{
     opacity: 50%;
+    /* cursor: pointer; */
 }
+
+#header-upper{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+#header-lower{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
 #home-page{
     text-align: center;
-    display: grid;
+    /* display: grid; */
     grid-template-rows: 5% 5% 90%;
 }
 
 #feed{
+    padding-left: 60px;
     display: grid;
-    align-content: space-between;
+    height: 100%;
+    align-content: space-around;
     grid-template-columns: 33% 33% 33%;
     grid-template-areas: 
-    "con" "rec" "syn"
-    "con" "rec" "syn"
-    "con" "rec" "syn"
-    "con" "rec" "syn"
-    "con" "rec" "syn";
+    "syn con rec"
+    ;
+}
+
+.column-1{
+    grid-area: syn;
+}
+
+.column-2{
+    grid-area: con;
+}
+
+.column-3{
+    grid-area: rec;
 }
 
 @media (min-width: 700px) and (max-width: 1100px) {
     #feed{
         display: grid;
         grid-template-columns: 50% 50%;
+        grid-template-rows: 70% 30%;
         grid-template-areas: 
-        "con" "rec" 
-        "con" "rec" 
-        "con" "rec" 
-        "con" "rec" 
-        "con" "rec"
-        "syn" "syn"
-        "syn" "syn"
-        "syn";
+        "syn con" 
+        "rec rec";
     }
+    .column-3{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+    .column-3 div{
+        width: 50%;
+        
+    }
+
 }
 
 @media (max-width: 699px) {
     #feed{
         display: grid;
         grid-template-columns: 100%;
+        grid-template-rows: 33% 33% 33%;
         grid-template-areas: 
-        "con" "rec" 
-        "con" "rec" 
-        "con" "rec" 
-        "con" "rec" 
-        "con" "rec"
-        "syn" "syn"
-        "syn" "syn"
-        "syn";
+        "syn"  
+        "con"  
+        "rec"  
+        ;
     }
-
+    
 }
